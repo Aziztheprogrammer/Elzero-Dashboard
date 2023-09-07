@@ -1,0 +1,18 @@
+/* Start Global Rules */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f5f5f5;
+	font-family: "Open sans", sans-serif;
+}
+
+ul {
+	padding: 0px;
+}
+
+a {
+	color: #000;
+}
+/*End Global Rules*/
