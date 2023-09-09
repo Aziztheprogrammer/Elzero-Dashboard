@@ -496,5 +496,194 @@ section.main h1.section-title:hover::before {
 	}
 }
 
+.wrapper .latest-uploads .files .file {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0px;
+	border-bottom: 1px #ddd solid;
+}
+
+.wrapper .latest-uploads .files .file:last-child {
+	border-bottom: none;
+}
+
+.wrapper .latest-uploads .files .file .info {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+}
+
+.wrapper .latest-uploads .files .file .info .name-owner {
+	font-size: 0.9rem;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	font-weight: 400;
+}
+
+.wrapper .latest-uploads .files .file .info .name-owner span:nth-child(2) {
+	color: var(--grey-color);
+}
+
+.wrapper .latest-uploads .files .file .size {
+	background-color: #eee;
+	font-size: 0.8rem;
+	font-weight: 400;
+	padding: 5px 8px;
+	border-radius: 5px;
+}
+
+.wrapper .project-progress::before {
+	content: url(../images/project.png);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    height: 60%;
+    opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+	.wrapper .project-progress::before {
+		display: none;
+	}
+}
+
+.wrapper .project-progress .projects {
+	position: relative;
+}
+
+.wrapper .project-progress .projects::after {
+	content: "";
+	width: 2px;
+	height: calc(100% - 30px);
+	position: absolute;
+	top: 50%;
+	left: 7.5px;
+	transform: translateY(-50%);
+	background-color: var(--blue-color);
+}
+
+.wrapper .project-progress .projects li {
+	padding: 15px 0px;
+	position: relative;
+}
+
+.wrapper .project-progress .projects li::after {
+	content: "";
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border: var(--blue-color) solid 2px;
+	border-radius: 50%;
+	position: absolute;
+	left: calc(-1.75rem + 7.5px);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.wrapper .project-progress .projects li::before {
+	content: "";
+	height: 17px;
+	width: 17px;
+	background-color: var(--blue-color);
+	border-radius: 50%;
+	position: absolute;
+	left: calc(-1.75rem + 7.5px);
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.wrapper .project-progress .projects li.none::before {
+	display: none;
+}
+
+.wrapper .project-progress .projects li.fade-animation::before {
+	animation: fade 1.5s linear infinite alternate;
+}
+
+@keyframes fade {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.wrapper .reminders ul li::after {
+	content: "";
+	height: calc(100% - 20px);
+	width: 2px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0px;
+}
+
+.wrapper .reminders ul li:nth-child(1)::after {
+	background-color: var(--blue-color);
+}
+
+.wrapper .reminders ul li:nth-child(2)::after {
+	background-color: var(--green-color);
+}
+
+.wrapper .reminders ul li:nth-child(3)::after {
+	background-color: var(--orange-color);
+}
+
+.wrapper .reminders ul li:nth-child(4)::after {
+	background-color: var(--red-color);
+}
+
+.wrapper .reminders ul li::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	left: calc(-15px - 1.75rem);
+	top: 50%;
+	transform: translate(100%, -50%);
+	border-radius: 50%;
+}
+
+.wrapper .reminders ul li:nth-child(1)::before {
+	background-color: var(--blue-color);
+}
+
+.wrapper .reminders ul li:nth-child(2)::before {
+	background-color: var(--green-color);
+}
+
+.wrapper .reminders ul li:nth-child(3)::before {
+	background-color: var(--orange-color);
+}
+
+.wrapper .reminders ul li:nth-child(4)::before {
+	background-color: var(--red-color);
+}
+
+.wrapper .reminders ul li {
+	padding: 10px 0px 10px 15px;
+	position: relative;
+}
+
+.wrapper .reminders ul li span:first-child {
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+.wrapper .reminders ul li span:last-child {
+	color: var(--grey-color);
+	font-size: 0.8rem;
+}
+
 
 /*End Dashboard*/
