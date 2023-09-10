@@ -685,5 +685,106 @@ section.main h1.section-title:hover::before {
 	font-size: 0.8rem;
 }
 
+.wrapper .latest-post .content {
+	border-top: 1px #ddd solid;
+	border-bottom: 1px #ddd solid;
+}
+
+.wrapper .social-media .social-links > div {
+	height: 60px;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+.wrapper .social-media .social-links > div i {
+	height: 60px;
+	width: 60px;
+	position: relative;
+	font-size: 1.8rem;
+	color: white;
+	transition: var(--transition-delay) ease all;
+}
+
+.wrapper .social-media .social-links > div i:hover {
+	transform: rotate(5deg);
+}
+
+.wrapper .social-media .social-links > div i::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.wrapper .social-media .social-links > div .info {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.wrapper .social-media .social-links > div .info span {
+	font-weight: 400;
+}
+
+.wrapper .social-media .social-links > div .info a {
+	padding: 5px 5px;
+	color: white;
+	font-weight: 400;
+	border-radius: 5px;
+	font-size: 0.8rem;
+}
+
+.wrapper > .projects {
+	grid-column: span 2;
+	overflow-x: scroll !important;
+}
+
+@media (max-width: 1024px) {
+	.wrapper > .projects {
+		grid-column: span 1;
+	}
+}
+
+.wrapper > .projects table,
+.wrapper > .projects table th,
+.wrapper > .projects table td {
+	border: 1px #ddd solid;
+	border-collapse: collapse;
+	padding: 20px 15px;
+	font-weight: 400;
+}
+
+.wrapper > .projects table tr {
+	transition: var(--transition-delay) all ease;
+}
+
+.wrapper > .projects table tr:hover {
+	background-color: #eee;
+}
+
+.wrapper > .projects table tr td:nth-child(5) > img {
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: -10px;
+}
+
+.wrapper .projects table tr td:nth-child(5) > img:nth-child(1) {
+	margin-left: 0px;
+}
+
+.wrapper > .projects table tr:nth-child(1) span {
+	background-color: transparent;
+	color: black;
+} 
+
+.wrapper > .projects table tr span {
+	font-size: 0.9rem;
+	color: white;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
 
 /*End Dashboard*/
