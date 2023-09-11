@@ -797,30 +797,45 @@ section.main h1.section-title:hover::before {
 	gap: 15px;
 }
 
-.wrapper .switch {
+.wrapper .switch label {
 	background-color: var(--blue-color);
 	border-radius: 15px;
 	height: 30px;
 	width: 70px;
-	position: relative;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 2px;
+	transition: var(--transition-delay) all ease;
 }
 
-.wrapper .switch::after {
+.wrapper .switch input {
+	appearance: none;
+}
+
+.wrapper .switch label::after {
 	content: "\f00c";
 	color: var(--blue-color);
 	font-family: "Font Awesome 6 Free";
 	background-color: white;
 	border-radius: 50%;
-	display: block;
-	height: 25px;
-	width: 25px;
-	position: absolute;
-	right: 2px;
-	top: 50%;
-	transform: translateY(-50%);
+	height: 23px;
+	width: 23px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: var(--transition-delay) ease all;
+}
+
+.wrapper .switch input:checked + label {
+	background-color: var(--grey-color);
+	justify-content: flex-start;
+}
+
+.wrapper .switch input:checked + label::after {
+	content: "\f00d";
+	color: var(--grey-color);
 }
 
 .wrapper .site-control .content textarea {
