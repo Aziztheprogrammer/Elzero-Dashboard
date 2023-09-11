@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Settings</title>
+	<!-- Css Main File  -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Normalize Css File -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Uploading The Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&#038;display=swap" rel="stylesheet"/>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!-- Start Side Bar -->
+	<aside class="side-bar shadow-xl p-2 md:p-7 bg-white flex flex-col items-centre justify-start w-fit gap-4 md:gap-7">
+		<div class="logo pb-4">
+			<h1 class="text-center text-lg md:text-2xl font-medium">Aziz</h1>
+		</div>
+		<ul class="links">
+			<li>
+				<a href="index.html" class="link text-black"><i class="fa-solid fa-chart-line"></i>
+				<span>Dashboard</span></a>
+			</li>
+			<li class="active">
+				<a href="settings.html" class="link text-black"><i class="fa-solid fa-gear"></i>
+				<span>Settings</span></a>
+			</li>
+			<li>
+				<a href="profile.html" class="link text-black"><i class="fa-solid fa-user"></i>
+				<span>Profile</span></a>
+			</li>
+			<li>
+				<a href="projects.html" class="link text-black"><i class="fa-solid fa-diagram-project"></i>
+				<span>Projects</span></a>
+			</li>
+			<li>
+				<a href="courses.html" class="link text-black"><i class="fa-solid fa-graduation-cap"></i>
+				<span>Courses</span></a>
+			</li>
+			<li>
+				<a href="friends.html" class="link text-black"><i class="fa-solid fa-user-group"></i>
+				<span>Friends</span></a>
+			</li>
+			<li>
+				<a href="files.html" class="link text-black"><i class="fa-solid fa-file"></i>
+				<span>Files</span></a>
+			</li>
+			<li>
+				<a href="plans.html" class="link text-black"><i class="fa-solid fa-cart-shopping"></i>
+				<span>Plans</span></a>
+			</li>
+		</ul>
+	</aside>
+	<!-- End Side Bar -->
+	<!-- Start Header -->
+	<header class="bg-white p-4 flex items-center justify-between">
+		<div class="search-box rounded-lg">
+			<i class="fa-solid fa-magnifying-glass mx-2 text-gray-500"></i>
+			<input type="text" name="search-box" placeholder="Type A Keyword">
+		</div>
+		<div class="profile flex justify-center items-center gap-3">
+			<span class="relative p-1">
+				<i class="fa-regular fa-bell fa-lg"></i>
+			</span>
+			<img src="images/avatar.png" alt="Profile Image">
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start Wrapper -->
+	<section class="main p-6 font-bold">
+		<h1 class="section-title text-3xl relative w-fit pb-3 mb-6">Settings</h1>
+		<div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-4">
+			<!-- Start Site Control -->
+			<div class="site-control">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Site Control</h2>
+					<span class="text-sm font-medium text-gray-500">Control The Website If There Is Maintenance</span>
+				</div>
+				<div class="content mt-6">
+					<div class="website-control flex items-center justify-between">
+						<div>
+							<span>Website Control</span>
+							<p class="font-normal text-sm text-gray-500">Open/Close Website And Type The Reason</p>
+						</div>
+						<div class="switch"></div>
+					</div>
+					<textarea placeholder="Close Message Content"></textarea>
+				</div>
+			</div>
+			<!-- End Site Control -->
+			<!-- Start General Info -->
+			<div class="general-info">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">General Info</h2>
+					<span class="text-sm font-medium text-gray-500">General Information About Your Account</span>
+				</div>
+				<div class="content mt-6">
+					<form>
+						<label for="first-name">First Name</label>
+						<input type="text" name="first-name" id="first-name" placeholder="First Name">
+
+						<label for="last-name">Last Name</label>
+						<input type="text" name="last-name" id="last-name" placeholder="Last Name">
+						<label for="email">Email</label>
+						<div class="email-input flex items-center gap-4">
+							<input type="email" name="email" id="email" placeholder="Email" readonly value="aziz@gmail.com">
+							<a href="#">Change</a>
+						</div>	
+					</form>
+				</div>	
+			</div>
+			<!-- End General Info -->
+			<!-- Start Security Info -->
+			<div class="security-info">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Security Info</h2>
+					<span class="text-sm font-medium text-gray-500">Security Information About Your Account</span>
+				</div>
+				<div class="content mt-6">
+					<div class="password">
+						<div>
+							<span class="font-normal">Password</span>
+							<p class="text-gray-500 font-normal text-sm mt-2">Last Change On 25/10/2021</p>
+						</div>
+						<button>Change</button>
+					</div>
+					<div class="two-factor">
+						<div>
+							<span class="font-normal">Two-Factor Authentication</span>
+							<p class="text-gray-500 font-normal text-sm mt-2">Enable/Disable The Feature</p>
+						</div>
+						<div class="switch"></div>
+					</div>
+					<div class="devices">
+						<div>
+							<span class="font-normal">Devices</span>
+							<p class="text-gray-500 font-normal text-sm mt-2">Check The Login Devices List</p>
+						</div>
+						<button>Devices</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Security Info -->
+			<!-- Start Social Info -->
+			<div class="social-info">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Social Info</h2>
+					<span class="text-sm font-medium text-gray-500">Social Media Information</span>
+				</div>
+				<div class="content mt-6">
+					<div class="twitter">
+						<input type="text" name="twitter" placeholder="Twitter Username">
+						<i class="fa-brands fa-twitter"></i>
+					</div>
+					<div class="facebook">
+						<input type="text" name="facebook" placeholder="Facebook Username">
+						<i class="fa-brands fa-facebook"></i>
+					</div>
+					<div class="linkedin">
+						<input type="text" name="linkedin" placeholder="LinkedIn Username">
+						<i class="fa-brands fa-linkedin"></i>
+					</div>
+					<div class="youtube">
+						<input type="text" name="youtube" placeholder="Youtube Username">
+						<i class="fa-brands fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<!-- End Social Info -->
+			<!-- Start Widget Control -->
+			<div class="widget-control">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Widget Control</h2>
+					<span class="text-sm font-medium text-gray-500">Show/Hide Widgets</span>
+				</div>
+				<div class="content mt-2">
+					<form>
+						<input type="checkbox" name="checkbox1" id="checkbox1">
+						<label for="checkbox1">Quick Draft</label>
+						<input type="checkbox" name="checkbox2" id="checkbox2">
+						<label for="checkbox2">Yearly Targets</label>
+						<input type="checkbox" name="checkbox3" id="checkbox3">
+						<label for="checkbox3">Tickets Statistics</label>
+						<input type="checkbox" name="checkbox4" id="checkbox4">
+						<label for="checkbox4">Latest News</label>
+						<input type="checkbox" name="checkbox5" id="checkbox5">
+						<label for="checkbox5">Latest Tasks</label>
+						<input type="checkbox" name="checkbox6" id="checkbox6">
+						<label for="checkbox6">Top Search Items</label>
+					</form>
+				</div>
+			</div>
+			<!-- End Widget Control -->
+			<!-- Start Backup Manager -->
+			<div class="backup-manager">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Backup Manager</h2>
+					<span class="text-sm font-medium text-gray-500">Control Backup Time And Location</span>
+				</div>
+				<div class="content">
+					<form class="period pb-4">
+						 <input type="radio" name="period" id="daily" checked> 
+						 <label for="daily">Daily</label>
+
+						 <input type="radio" name="period" id="weekly"> 
+						 <label for="weekly">Weekly</label>
+
+						 <input type="radio" name="period" id="monthly"> 
+						 <label for="monthly">Monthly</label>
+					</form>
+					<hr>
+					<div class="backup-plan w-full grid grid-cols-1 md: grid-cols-3 gap-4">
+						<div>
+							<input type="radio" name="plan" id="megaman"> 
+						 	<label for="megaman"><i class="fa-solid fa-server"></i>Megaman</label>
+						</div>
+						<div>
+							<input type="radio" name="plan" id="zero"> 
+						 	<label for="zero"><i class="fa-solid fa-server"></i>Zero</label>
+						</div>
+						<div>
+							<input type="radio" name="plan" id="sigma"> 
+						 	<label for="sigma"><i class="fa-solid fa-server"></i>Sigma</label>
+						</div>						 
+					</div>
+				</div>
+			</div>
+			<!-- End Backup Manager -->
+		</div>
+	</section>
+	<!-- End Wrapper -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
