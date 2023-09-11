@@ -883,9 +883,17 @@ section.main h1.section-title:hover::before {
 .security-info .content > div {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
 	justify-content: space-between;
 	padding: 15px 0px;
 	border-bottom: 1px #ddd solid; 
+}
+
+@media (max-width: 768px) {
+	.security-info .content > div div:first-child {
+		width: 100%;
+	}
 }
 
 .security-info .content > div:last-child {
