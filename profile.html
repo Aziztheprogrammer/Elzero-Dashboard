@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<!-- Css Main File  -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Normalize Css File -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Uploading The Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&#038;display=swap" rel="stylesheet"/>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!-- Start Side Bar -->
+	<aside class="side-bar shadow-xl p-2 md:p-7 bg-white flex flex-col items-centre justify-start w-fit gap-4 md:gap-7">
+		<div class="logo pb-4">
+			<h1 class="text-center text-lg md:text-2xl font-medium">Aziz</h1>
+		</div>
+		<ul class="links">
+			<li>
+				<a href="index.html" class="link text-black"><i class="fa-solid fa-chart-line"></i>
+				<span>Dashboard</span></a>
+			</li>
+			<li>
+				<a href="settings.html" class="link text-black"><i class="fa-solid fa-gear"></i>
+				<span>Settings</span></a>
+			</li>
+			<li class="active">
+				<a href="profile.html" class="link text-black"><i class="fa-solid fa-user"></i>
+				<span>Profile</span></a>
+			</li>
+			<li>
+				<a href="projects.html" class="link text-black"><i class="fa-solid fa-diagram-project"></i>
+				<span>Projects</span></a>
+			</li>
+			<li>
+				<a href="courses.html" class="link text-black"><i class="fa-solid fa-graduation-cap"></i>
+				<span>Courses</span></a>
+			</li>
+			<li>
+				<a href="friends.html" class="link text-black"><i class="fa-solid fa-user-group"></i>
+				<span>Friends</span></a>
+			</li>
+			<li>
+				<a href="files.html" class="link text-black"><i class="fa-solid fa-file"></i>
+				<span>Files</span></a>
+			</li>
+			<li>
+				<a href="plans.html" class="link text-black"><i class="fa-solid fa-cart-shopping"></i>
+				<span>Plans</span></a>
+			</li>
+		</ul>
+	</aside>
+	<!-- End Side Bar -->
+	<!-- Start Header -->
+	<header class="bg-white p-4 flex items-center justify-between">
+		<div class="search-box rounded-lg">
+			<i class="fa-solid fa-magnifying-glass mx-2 text-gray-500"></i>
+			<input type="text" name="search-box" placeholder="Type A Keyword">
+		</div>
+		<div class="profile flex justify-center items-center gap-3">
+			<span class="relative p-1">
+				<i class="fa-regular fa-bell fa-lg"></i>
+			</span>
+			<img src="images/avatar.png" alt="Profile Image">
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start Wrapper -->
+	<section class="main p-6 font-bold">
+		<h1 class="section-title text-3xl relative w-fit pb-3 mb-6">Profile</h1>
+		<div class="wrapper grid gap-4">
+			<!-- Start Profile -->
+			<div class="profile">
+				<div class="user-rating flex flex-col items-center justify-center gap-3 relative">
+					<img src="images/avatar.png" alt="Profile Image" width="100px" height="auto">
+					<h2 class="text-lg">Osama Elzero</h2>
+					<span class="text-gray-500">Level 20</span>
+					<div class="level bg-gray-300 rounded-full w-36 h-2 relative"></div>
+					<div class="stars">
+						<i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+						<i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+						<i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+						<i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+						<i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+					</div>
+					<span class="rating-num text-xs text-gray-500 font-normal">550 Ratings</span>
+				</div>
+				<div class="user-info flex flex-col items-stretch justify-start">
+					<div class="general-info flex flex-col gap-2 p-7">
+						<h3 class="text-gray-500 font-normal text-center lg:text-left mb-4 lg:mb-0">General Information</h3>
+						<div class="info flex flex-col lg:flex-row items-center justify-start gap-x-16 gap-y-4 font-normal mb-4 lg:mb-0">
+							<p class="text-sm"><span class="text-gray-500">Full Name : </span>Osama Mohamed</p>
+							<p class="text-sm"><span class="text-gray-500">Gender : </span>Male</p>
+							<p class="text-sm"><span class="text-gray-500">Country : </span>Egypt</p>
+						</div>
+						<div class="switch">
+							<input type="checkbox" name="switch-toggle" id="switch-toggle-1">
+							<label for="switch-toggle-1"></label>
+						</div>
+					</div>
+					<div class="personal-info flex flex-col gap-2 p-7">
+						<h3 class="text-gray-500 font-normal text-center lg:text-left mb-4 lg:mb-0">Personal Information</h3>
+						<div class="info flex flex-col lg:flex-row items-center justify-start gap-x-16 gap-y-4 font-normal mb-4 lg:mb-0">
+							<p class="text-sm"><span class="text-gray-500">Email : </span>o@nn.sa</p>
+							<p class="text-sm"><span class="text-gray-500">Phone : </span>019123456789</p>
+							<p class="text-sm"><span class="text-gray-500">Date Of Birth : </span>25/10/1982</p>
+						</div>
+						<div class="switch">
+							<input type="checkbox" name="switch-toggle" id="switch-toggle-2">
+							<label for="switch-toggle-2"></label>
+						</div>
+					</div>
+					<div class="job-info flex flex-col gap-2 p-7">
+						<h3 class="text-gray-500 font-normal text-center lg:text-left mb-4 lg:mb-0">Job Information</h3>
+						<div class="info flex flex-col lg:flex-row items-center justify-start gap-x-16 gap-y-4 font-normal mb-4 lg:mb-0">
+							<p class="text-sm"><span class="text-gray-500">Title : </span>Full Stack Developer</p>
+							<p class="text-sm"><span class="text-gray-500">Programming Language : </span>Python</p>
+							<p class="text-sm"><span class="text-gray-500">Years Of Experience : </span>+15</p>
+						</div>
+						<div class="switch">
+							<input type="checkbox" name="switch-toggle" id="switch-toggle-3">
+							<label for="switch-toggle-3"></label>
+						</div>
+					</div>
+					<div class="billing-info flex flex-col gap-2 p-7">
+						<h3 class="text-gray-500 font-normal text-center lg:text-left mb-4 lg:mb-0">Billing Information</h3>
+						<div class="info flex flex-col lg:flex-row items-center justify-start gap-x-16 gap-y-4 font-normal mb-4 lg:mb-0">
+							<p class="text-sm"><span class="text-gray-500">Payment Method : </span>Paypal</p>
+							<p class="text-sm"><span class="text-gray-500">Email : </span>email@website.com</p>
+							<p class="text-sm"><span class="text-gray-500">Subscription : </span>Monthly</p>
+						</div>
+						<div class="switch">
+							<input type="checkbox" name="switch-toggle" id="switch-toggle-4">
+							<label for="switch-toggle-4"></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Profile -->
+			<!-- Start My Skills -->
+			<div class="skills">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">My Skills</h2>
+					<span class="text-sm font-medium text-gray-500">Complete Skills List</span>
+				</div>
+				<ul class="mt-6 font-normal text-sm">
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">HTML</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Pugjs</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">HAML</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">CSS</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">SASS</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Stylus</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">JavaScript</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">TypeScript</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Vuejs</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Reactjs</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Jest</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Jasmine</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">PHP</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Laravel</li>
+						</ul>
+					</li>
+					<hr>
+					<li class="py-4">
+						<ul class="text-center lg:text-left">
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Python</li>
+							<li class="inline-block mr-4 rounded-lg bg-gray-200 px-2 py-1">Django</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- End My Skills -->
+			<!-- Start Latest Activities -->
+			<div class="latest-act">
+				<div class="title text-center md:text-left">
+					<h2 class="text-2xl font-bold ">Latest Activities</h2>
+					<span class="text-sm font-medium text-gray-500">Latest Activities Done By The User</span>
+				</div>
+				<div class="content mt-6 flex flex-col gap-6">
+					<div class="activity flex items-center justify-between py-2 gap-4">
+						<div class="info flex items-center gap-4">
+							<img src="images/activity-01.png" alt="Activity Image" width="60px" height="auto">
+							<div class="text font-normal">
+								<span>Store</span>
+								<p class="text-gray-500">Bought The Mastering Python Course</p>
+							</div>
+						</div>
+						<div class="time text-right font-normal">
+							<span>18:10</span>
+							<p class="text-gray-500">Yesterday</p>
+						</div>
+					</div>
+					<hr>
+					<div class="activity flex items-center justify-between py-2 gap-4">
+						<div class="info flex items-center gap-4">
+							<img src="images/activity-02.png" alt="Activity Image" width="60px" height="auto">
+							<div class="text font-normal">
+								<span>Academy</span>
+								<p class="text-gray-500">Got The PHP Certificate</p>
+							</div>
+						</div>
+						<div class="time text-right font-normal">
+							<span>16:05</span>
+							<p class="text-gray-500">Yesterday</p>
+						</div>
+					</div>
+					<hr>
+					<div class="activity flex items-center justify-between py-2 gap-4">
+						<div class="info flex items-center gap-4">
+							<img src="images/activity-03.png" alt="Activity Image" width="60px" height="auto">
+							<div class="text font-normal">
+								<span>Badges</span>
+								<p class="text-gray-500">Unlocked The 10 Skills Badge</p>
+							</div>
+						</div>
+						<div class="time text-right font-normal">
+							<span>18:05</span>
+							<p class="text-gray-500">Yesterday</p>
+						</div>
+					</div>
+					<hr>
+					<div class="activity flex items-center justify-between py-2 gap-4">
+						<div class="info flex items-center gap-4">
+							<img src="images/activity-01.png" alt="Activity Image" width="60px" height="auto">
+							<div class="text font-normal">
+								<span>Store</span>
+								<p class="text-gray-500">Bought The Typescript Course</p>
+							</div>
+						</div>
+						<div class="time text-right font-normal">
+							<span>12:05</span>
+							<p class="text-gray-500">Yesterday</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Latest Activities -->
+		</div>
+	</section>
+	<!-- End Wrapper -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

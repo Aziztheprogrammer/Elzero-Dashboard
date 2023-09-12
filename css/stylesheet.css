@@ -811,7 +811,7 @@ section.main h1.section-title:hover::before {
 }
 
 .wrapper .switch input {
-	appearance: none;
+	display: none;
 }
 
 .wrapper .switch label::after {
@@ -1096,3 +1096,103 @@ section.main h1.section-title:hover::before {
 /*End Backup Manager*/
 
 /*End Settings*/
+
+/*Start Profile*/
+.profile .wrapper {
+	grid-template-columns: auto 1fr;
+}
+/*Start Profile Box*/
+.wrapper .profile {
+	grid-column: span 2;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	padding: 0px !important;
+}
+
+@media (max-width: 1024px) {
+	.wrapper .profile {
+		grid-column: span 1;
+		grid-template: auto auto / 1fr;
+	}
+}
+
+.wrapper .profile .user-rating {
+	padding: 40px;
+}
+
+.wrapper .profile .user-rating::after {
+	content: "";
+	background-color: #ddd;
+	width: 1px;
+	height: 70%;
+	position: absolute;
+	right: -1px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.wrapper .profile .user-rating .level {
+	overflow: hidden;
+}
+
+.wrapper .profile .user-rating .level::after {
+	content: "";
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: var(--blue-color);
+}
+
+.wrapper .profile .switch label {
+	width: 70px !important;
+	height: 15px !important;
+}
+
+@media (max-width: 1024px) {
+	.wrapper .profile .switch label {
+		margin: 0px auto;
+	}
+}
+
+.wrapper .profile .switch label::after {
+	height: 10px !important;
+	width: 10px !important;
+	content: "";
+}
+
+.wrapper .profile .switch input:checked + label::after {
+	content: "" !important;
+}
+
+.wrapper .profile .user-info > div {
+	border-bottom: 1px #ddd solid;
+}
+
+.wrapper .profile .user-info > div:last-child {
+	border-bottom: none;
+}
+/*End Profile Box*/
+
+/*Start Latest Activities*/
+@media (max-width: 768px) {
+	.wrapper .latest-act .content .activity {
+		flex-wrap: wrap;
+	}
+
+	.wrapper .latest-act .content > div .info {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.wrapper .latest-act .content > div .time {
+		width: 100%;
+		text-align: center;
+	}
+} 
+/*End Latest Activities*/
+
+/*End Profile*/
