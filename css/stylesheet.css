@@ -1194,5 +1194,111 @@ section.main h1.section-title:hover::before {
 	}
 } 
 /*End Latest Activities*/
-
 /*End Profile*/
+
+/*Start Projects Section*/
+/*Start Elzero Dashboard*/
+.projects-section .wrapper div .date {
+	top: 20px;
+	right: 20px;
+}
+
+.projects-section .wrapper div .content > div {
+	border-bottom: 1px #ddd solid;
+}
+
+.projects-section .wrapper div .content > div:last-child {
+	border-bottom: none;
+}
+
+.projects-section .wrapper div .content .workers {
+	position: relative;
+}
+
+.projects-section .wrapper div .content .workers > img {
+	border-radius: 50%;
+	border: whitesmoke 2px solid;
+	margin-left: -7px;
+}
+
+.projects-section .wrapper div .content .workers > img:hover {
+	position: relative;
+	z-index: 100;
+}
+
+@media (max-width: 768px) {
+	.projects-section .wrapper div .content .project-requirement span {
+		display: block;
+		width: fit-content;
+		margin-bottom: 10px;
+	}
+
+	.projects-section .wrapper div .content .info .price {
+		width: 100%;
+		text-align: center;
+	}
+
+	.projects-section .wrapper div .content .info .progress {
+		margin: 0px auto 10px auto;
+	}
+}
+
+.projects-section .wrapper div .content .info .progress {
+	overflow: hidden;
+}
+
+.projects-section .wrapper div .content .info .progress::after {
+	content: "";
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	left: 0px;
+}
+
+.projects-section .wrapper div:nth-child(1) .content .info .progress::after {
+	background-color: var(--red-color);
+	width: 50%;
+}
+
+.projects-section .wrapper div:nth-child(2) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 80%;
+}
+
+.projects-section .wrapper div:nth-child(3) .content .info .progress::after {
+	background-color: var(--blue-color);
+	width: 100%;
+}
+
+.projects-section .wrapper div:nth-child(4) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 60%;
+}
+
+.projects-section .wrapper div:nth-child(5) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 65%;
+}
+
+.projects-section .wrapper div:nth-child(6) .content .info .progress::after {
+	background-color: var(--red-color);
+	width: 35%;
+}
+
+.projects-section .wrapper div:nth-child(7) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 65%;
+}
+
+.projects-section .wrapper div:nth-child(8) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 60%;
+}
+
+.projects-section .wrapper div:nth-child(9) .content .info .progress::after {
+	background-color: var(--green-color);
+	width: 90%;
+}
+
+/*End Elzero Dashboard*/
+/*End Projects Section*/
