@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Files</title>
+	<!-- Css Main File  -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Normalize Css File -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Uploading The Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&#038;display=swap" rel="stylesheet"/>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!-- Start Side Bar -->
+	<aside class="side-bar shadow-xl p-2 md:p-7 bg-white flex flex-col items-centre justify-start w-fit gap-4 md:gap-7">
+		<div class="logo pb-4">
+			<h1 class="text-center text-lg md:text-2xl font-medium">Aziz</h1>
+		</div>
+		<ul class="links">
+			<li>
+				<a href="index.html" class="link text-black"><i class="fa-solid fa-chart-line"></i>
+				<span>Dashboard</span></a>
+			</li>
+			<li>
+				<a href="settings.html" class="link text-black"><i class="fa-solid fa-gear"></i>
+				<span>Settings</span></a>
+			</li>
+			<li>
+				<a href="profile.html" class="link text-black"><i class="fa-solid fa-user"></i>
+				<span>Profile</span></a>
+			</li>
+			<li>
+				<a href="projects.html" class="link text-black"><i class="fa-solid fa-diagram-project"></i>
+				<span>Projects</span></a>
+			</li>
+			<li>
+				<a href="courses.html" class="link text-black"><i class="fa-solid fa-graduation-cap"></i>
+				<span>Courses</span></a>
+			</li>
+			<li>
+				<a href="friends.html" class="link text-black"><i class="fa-solid fa-user-group"></i>
+				<span>Friends</span></a>
+			</li>
+			<li class="active">
+				<a href="files.html" class="link text-black"><i class="fa-solid fa-file"></i>
+				<span>Files</span></a>
+			</li>
+			<li>
+				<a href="plans.html" class="link text-black"><i class="fa-solid fa-cart-shopping"></i>
+				<span>Plans</span></a>
+			</li>
+		</ul>
+	</aside>
+	<!-- End Side Bar -->
+	<!-- Start Header -->
+	<header class="bg-white p-4 flex items-center justify-between">
+		<div class="search-box rounded-lg">
+			<i class="fa-solid fa-magnifying-glass mx-2 text-gray-500"></i>
+			<input type="text" name="search-box" placeholder="Type A Keyword">
+		</div>
+		<div class="profile flex justify-center items-center gap-3">
+			<span class="relative p-1">
+				<i class="fa-regular fa-bell fa-lg"></i>
+			</span>
+			<img src="images/avatar.png" alt="Profile Image">
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start Wrapper -->
+	<section class="files-section main p-6 font-bold">
+		<h1 class="section-title text-3xl relative w-fit pb-3 mb-6">Files</h1>
+		<div class="wrapper">
+			<!-- Start Files -->
+			<div class="files">
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/pdf.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.pdf</span>
+						<span class="uploader text-sm text-gray-500 absolute">Aziz</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>5.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/eps.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.eps</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mahdi</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2022</span>
+						<span>28.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/dll.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.dll</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mazen</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>1MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/sql.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.sql</span>
+						<span class="uploader text-sm text-gray-500 absolute">Coder</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>15MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/zip.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.zip</span>
+						<span class="uploader text-sm text-gray-500 absolute">Ibrahim</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>2MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/txt.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.txt</span>
+						<span class="uploader text-sm text-gray-500 absolute">Designer</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2021</span>
+						<span>0.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/png.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.png</span>
+						<span class="uploader text-sm text-gray-500 absolute">Admin</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>21.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/psd.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.psd</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mohamed</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>21/06/2020</span>
+						<span>7.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/pdf.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.pdf</span>
+						<span class="uploader text-sm text-gray-500 absolute">Aziz</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>5.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/eps.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.eps</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mahdi</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2022</span>
+						<span>28.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/dll.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.dll</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mazen</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>1MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/sql.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.sql</span>
+						<span class="uploader text-sm text-gray-500 absolute">Coder</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>15MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/zip.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.zip</span>
+						<span class="uploader text-sm text-gray-500 absolute">Ibrahim</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>2MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/txt.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.txt</span>
+						<span class="uploader text-sm text-gray-500 absolute">Designer</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2021</span>
+						<span>0.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/png.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.png</span>
+						<span class="uploader text-sm text-gray-500 absolute">Admin</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>20/06/2020</span>
+						<span>21.5MB</span>
+					</div>
+				</div>
+				<div class="file font-normal p-4 bg-white">
+					<div class="file-pic relative flex flex-col items-center gap-3">
+						<i class="fa-solid fa-download text-gray-500 absolute"></i>
+						<img src="images/psd.svg" alt="File Image" width="60px" height="auto">
+						<span class="file-name text-sm mb-6">my-file.psd</span>
+						<span class="uploader text-sm text-gray-500 absolute">Mohamed</span>
+					</div>
+					<div class="file-info text-xs text-gray-500 flex items-center justify-between pt-2">
+						<span>21/06/2020</span>
+						<span>7.5MB</span>
+					</div>
+				</div>
+			</div>
+			<!-- End Files -->
+			<!-- Start Files Stats -->
+			<div class="files-stats flex flex-col items-center gap-4 h-max">
+				<h1 class="text-xl md:self-start">Files Statistics</h1>
+				<div class="w-60 flex flex-col items-stretch gap-3">
+					<div class="file-stats w-full flex items-center justify-between p-2">
+						<div class="file-info flex items-center gap-3">
+							<i class="fa-solid fa-file-pdf bg-blue-200 text-blue-700 p-2"></i>
+							<div class="text text-xs text-gray-700">
+								<span>PDF Files</span><br>
+								<span>130</span>
+							</div>
+						</div>
+						<span class="size text-xs text-gray-500">
+							6.5GB
+						</span>
+					</div>
+					<div class="file-stats w-full flex items-center justify-between p-2">
+						<div class="file-info flex items-center gap-3">
+							<i class="fa-solid fa-images bg-green-200 text-green-700 p-2"></i>
+							<div class="text text-xs text-gray-700">
+								<span>Images</span><br>
+								<span>115 Files</span>
+							</div>
+						</div>
+						<span class="size text-xs text-gray-500">
+							3.5GB
+						</span>
+					</div>
+					<div class="file-stats w-full flex items-center justify-between p-2">
+						<div class="file-info flex items-center gap-3">
+							<i class="fa-regular fa-file-word bg-red-200 text-red-700 p-2"></i>
+							<div class="text text-xs text-gray-700">
+								<span>Word Files</span><br>
+								<span>110</span>
+							</div>
+						</div>
+						<span class="size text-xs text-gray-500">
+							3.2GB
+						</span>
+					</div>
+					<div class="file-stats w-full flex items-center justify-between p-2">
+						<div class="file-info flex items-center gap-3">
+							<i class="fa-solid fa-file-csv bg-yellow-200 text-yellow-700 p-2"></i>
+							<div class="text text-xs text-gray-700">
+								<span>CSV Files</span><br>
+								<span>99</span>
+							</div>
+						</div>
+						<span class="size text-xs text-gray-500">
+							2.9GB
+						</span>
+					</div>
+				</div>
+				<button class="text-white bg-blue-500 p-2 rounded-md font-normal hover:bg-blue-700 transition"><i class="fa-solid fa-upload"></i> Upload</button>
+			</div>
+			<!-- End Files Stats -->
+		</div>
+	</section>
+	<!-- End Wrapper -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

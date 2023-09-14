@@ -1368,5 +1368,68 @@ section.main h1.section-title:hover::before {
 	top: 20px;
 	right: 20px;
 }
-
 /*End Friends Section*/
+
+/*Start Files Section*/
+.files-section .wrapper {
+	background-color: #f5f5f5;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 15px;
+}
+
+@media (max-width: 992px) {
+	.files-section .wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.files-section .wrapper .files {
+		order: 2;
+	}
+
+	.files-section .wrapper .files-stats > div {
+		width: 100%;
+	}
+} 
+
+.files-section .wrapper .files {
+	background-color: #f5f5f5;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	gap: 10px;
+	padding: 0px;
+}
+
+.files-section .wrapper .files .file .file-pic {
+	border-bottom: 1px #ddd solid;
+	padding: 20px;
+}
+
+.files-section .wrapper .files .file .file-pic i {
+	top: 0px;
+	left: 0px;
+	transition: color var(--transition-delay) ease;
+}
+
+.files-section .wrapper .files .file img {
+	transition: var(--transition-delay) ease all;
+}
+
+.files-section .wrapper .files .file:hover img {
+	transform: rotate(10deg);
+}
+
+.files-section .wrapper .files .file .file-pic i:hover {
+	color: var(--blue-color);
+}
+
+.files-section .wrapper .files .file .file-pic .uploader {
+	bottom: 10px;
+	left: 0px;
+}
+
+.files-section .wrapper .files-stats .file-stats {
+	border: 1px #ddd solid;
+	border-radius: 5px;
+}
+/*End Files Section*/
