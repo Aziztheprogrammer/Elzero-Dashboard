@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Friends</title>
+	<!-- Css Main File  -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Normalize Css File -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Uploading The Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&#038;display=swap" rel="stylesheet"/>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!-- Start Side Bar -->
+	<aside class="side-bar shadow-xl p-2 md:p-7 bg-white flex flex-col items-centre justify-start w-fit gap-4 md:gap-7">
+		<div class="logo pb-4">
+			<h1 class="text-center text-lg md:text-2xl font-medium">Aziz</h1>
+		</div>
+		<ul class="links">
+			<li>
+				<a href="index.html" class="link text-black"><i class="fa-solid fa-chart-line"></i>
+				<span>Dashboard</span></a>
+			</li>
+			<li>
+				<a href="settings.html" class="link text-black"><i class="fa-solid fa-gear"></i>
+				<span>Settings</span></a>
+			</li>
+			<li>
+				<a href="profile.html" class="link text-black"><i class="fa-solid fa-user"></i>
+				<span>Profile</span></a>
+			</li>
+			<li>
+				<a href="projects.html" class="link text-black"><i class="fa-solid fa-diagram-project"></i>
+				<span>Projects</span></a>
+			</li>
+			<li>
+				<a href="courses.html" class="link text-black"><i class="fa-solid fa-graduation-cap"></i>
+				<span>Courses</span></a>
+			</li>
+			<li class="active">
+				<a href="friends.html" class="link text-black"><i class="fa-solid fa-user-group"></i>
+				<span>Friends</span></a>
+			</li>
+			<li>
+				<a href="files.html" class="link text-black"><i class="fa-solid fa-file"></i>
+				<span>Files</span></a>
+			</li>
+			<li>
+				<a href="plans.html" class="link text-black"><i class="fa-solid fa-cart-shopping"></i>
+				<span>Plans</span></a>
+			</li>
+		</ul>
+	</aside>
+	<!-- End Side Bar -->
+	<!-- Start Header -->
+	<header class="bg-white p-4 flex items-center justify-between">
+		<div class="search-box rounded-lg">
+			<i class="fa-solid fa-magnifying-glass mx-2 text-gray-500"></i>
+			<input type="text" name="search-box" placeholder="Type A Keyword">
+		</div>
+		<div class="profile flex justify-center items-center gap-3">
+			<span class="relative p-1">
+				<i class="fa-regular fa-bell fa-lg"></i>
+			</span>
+			<img src="images/avatar.png" alt="Profile Image">
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start Wrapper -->
+	<section class="friends-section main p-6 font-bold">
+		<h1 class="section-title text-3xl relative w-fit pb-3 mb-6">Friends</h1>
+		<div class="wrapper grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+			<!-- Start Friend 1 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-01.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Ahmed Nasser</span>
+					<p class="text-sm text-gray-500 font-normal">JavaScript Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>99 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>15 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>25 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/10/2021</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 1 -->
+			<!-- Start Friend 2 -->
+			<div class="friend relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-02.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Aziz Berhouma</span>
+					<p class="text-sm text-gray-500 font-normal">Cloud Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>210 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>31 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>7 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/10/2020</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 2 -->
+			<!-- Start Friend 3 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-03.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Ibrahim Mohsen</span>
+					<p class="text-sm text-gray-500 font-normal">Mobile Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>65 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>21 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>36 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/2/2022</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 3 -->
+			<!-- Start Friend 4 -->
+			<div class="friend relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-04.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Amira Hsain</span>
+					<p class="text-sm text-gray-500 font-normal">UI/UX Designer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>15 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>5 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>6 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/08/2023</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 4 -->
+			<!-- Start Friend 5 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-05.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Osama Elzero</span>
+					<p class="text-sm text-gray-500 font-normal">Python Coder</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>325 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>56 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>14 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 17/11/2019</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 5 -->
+			<!-- Start Friend 6 -->
+			<div class="friend relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-02.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Ahmed Ben Ibrahim</span>
+					<p class="text-sm text-gray-500 font-normal">Php Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>91 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>10 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>12 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/12/2020</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 6 -->
+			<!-- Start Friend 7 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-04.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Ramy Said</span>
+					<p class="text-sm text-gray-500 font-normal">Full Stack Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>110 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>11 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>20 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 02/20/2021</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 7 -->
+			<!-- Start Friend 8 -->
+			<div class="friend relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-05.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Mazen</span>
+					<p class="text-sm text-gray-500 font-normal">Mobile Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>65 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>21 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>26 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 03/2/2022</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 8 -->
+			<!-- Start Friend 9 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-01.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Elizabeth Jhonson</span>
+					<p class="text-sm text-gray-500 font-normal">Backend Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>58 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>14 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>12 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 10/01/2020</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 9 -->
+			<!-- Start Friend 10 -->
+			<div class="friend vip relative">
+				<div class="friend-profile flex flex-col items-center gap-2 py-3">
+					<div class="contact absolute">
+						<i class="fa-solid fa-phone bg-gray-200 p-2 rounded-full text-gray-600"></i>
+						<i class="fa-regular fa-envelope bg-gray-200 p-2 rounded-full text-gray-600"></i>
+					</div>
+					<img class="rounded-full" src="images/friend-03.jpg" alt="Profile Image" width="80px" height="auto">
+					<span>Mohamed Imam</span>
+					<p class="text-sm text-gray-500 font-normal">Frontend Developer</p>
+				</div>
+				<div class="stats flex flex-col gap-2 font-normal text-gray-700 text-sm py-3">
+					<span><i class="fa-regular fa-face-smile fa-fw mr-2"></i>114 Friends</span>
+					<span><i class="fa-solid fa-code-commit fa-fw mr-2"></i>39 Projects</span>
+					<span><i class="fa-regular fa-newspaper fa-fw mr-2"></i>2 Articles</span>
+				</div>
+				<div class="pt-3 flex items-center justify-between">
+					<span class="text-sm text-gray-700 font-normal">Joined 21/01/2019</span>
+					<div class="buttons font-normal text-white text-sm">
+						<a href="profile.html" class="bg-blue-500 rounded-md py-1 px-2">Profile</a>
+						<button class="bg-red-500 rounded-md py-1 px-2">Remove</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Friend 10 -->
+		</div>
+	</section>
+	<!-- End Wrapper -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

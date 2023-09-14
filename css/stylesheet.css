@@ -1336,3 +1336,37 @@ section.main h1.section-title:hover::before {
 	z-index: 2;
 }
 /*End Courses Section*/
+
+/*Start Friends Section*/
+.wrapper .friend > div {
+	border-bottom: 1px #ddd solid;
+}
+
+.wrapper .friend > div:last-child {
+	border-bottom: none;
+}
+
+.wrapper .friend .contact {
+	top: 20px;
+	left: 20px;
+}
+
+.wrapper .friend .contact i {
+	transition: var(--transition-delay) ease all;
+}
+
+.wrapper .friend .contact i:hover {
+	background-color: var(--blue-color);
+	color: white;
+}
+
+.wrapper .vip::after {
+	content: "\f521";
+	font-family: "Font Awesome 6 Free";
+	color: var(--orange-color);
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/*End Friends Section*/
