@@ -1098,11 +1098,11 @@ section.main h1.section-title:hover::before {
 /*End Settings*/
 
 /*Start Profile*/
-.profile .wrapper {
+.profile-section .wrapper {
 	grid-template-columns: auto 1fr;
 }
 /*Start Profile Box*/
-.wrapper .profile {
+.profile-section .wrapper .profile {
 	grid-column: span 2;
 	display: grid;
 	grid-template-columns: auto 1fr;
@@ -1110,7 +1110,11 @@ section.main h1.section-title:hover::before {
 }
 
 @media (max-width: 1024px) {
-	.wrapper .profile {
+	.profile-section .wrapper {
+		grid-template-columns: 1fr;
+	}
+
+	.profile-section .wrapper .profile {
 		grid-column: span 1;
 		grid-template: auto auto / 1fr;
 	}
