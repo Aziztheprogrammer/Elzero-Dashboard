@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plans</title>
+	<!-- Css Main File  -->
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<!-- Normalize Css File -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Uploading The Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&#038;display=swap" rel="stylesheet"/>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<!-- Start Side Bar -->
+	<aside class="side-bar shadow-xl p-2 md:p-7 bg-white flex flex-col items-centre justify-start w-fit gap-4 md:gap-7">
+		<div class="logo pb-4">
+			<h1 class="text-center text-lg md:text-2xl font-medium">Aziz</h1>
+		</div>
+		<ul class="links">
+			<li>
+				<a href="dashboard.html" class="link text-black"><i class="fa-solid fa-chart-line"></i>
+				<span>Dashboard</span></a>
+			</li>
+			<li>
+				<a href="settings.html" class="link text-black"><i class="fa-solid fa-gear"></i>
+				<span>Settings</span></a>
+			</li>
+			<li>
+				<a href="profile.html" class="link text-black"><i class="fa-solid fa-user"></i>
+				<span>Profile</span></a>
+			</li>
+			<li>
+				<a href="projects.html" class="link text-black"><i class="fa-solid fa-diagram-project"></i>
+				<span>Projects</span></a>
+			</li>
+			<li>
+				<a href="courses.html" class="link text-black"><i class="fa-solid fa-graduation-cap"></i>
+				<span>Courses</span></a>
+			</li>
+			<li>
+				<a href="friends.html" class="link text-black"><i class="fa-solid fa-user-group"></i>
+				<span>Friends</span></a>
+			</li>
+			<li>
+				<a href="files.html" class="link text-black"><i class="fa-solid fa-file"></i>
+				<span>Files</span></a>
+			</li>
+			<li class="active">
+				<a href="plans.html" class="link text-black"><i class="fa-solid fa-cart-shopping"></i>
+				<span>Plans</span></a>
+			</li>
+		</ul>
+	</aside>
+	<!-- End Side Bar -->
+	<!-- Start Header -->
+	<header class="bg-white p-4 flex items-center justify-between">
+		<div class="search-box rounded-lg">
+			<i class="fa-solid fa-magnifying-glass mx-2 text-gray-500"></i>
+			<input type="text" name="search-box" placeholder="Type A Keyword">
+		</div>
+		<div class="profile flex justify-center items-center gap-3">
+			<span class="relative p-1">
+				<i class="fa-regular fa-bell fa-lg"></i>
+			</span>
+			<img src="images/avatar.png" alt="Profile Image">
+		</div>
+	</header>
+	<!-- End Header -->
+	<!-- Start Wrapper -->
+	<section class="plans-section main p-6 font-bold">
+		<h1 class="section-title text-3xl relative w-fit pb-3 mb-6">Plans</h1>
+		<div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-4">
+			<!-- Start Free Plan -->
+			<div class="plan flex flex-col items-stretch p-4 gap-4">
+				<div class="plan-title bg-green-500 flex flex-col items-center justify-center text-white gap-2 p-7">
+					<span class="text-2xl">Free</span>
+					<span class="text-4xl relative">0.00</span>
+				</div>
+				<ul class="font-normal">
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Text Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Videos Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Appear On Leaderboard
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Browse Content Without Ads
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Access All Assignments
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Get Daily Prizes
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Earn Certificate
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						1 GB Space For Hosting Files
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Access Badge System
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+				</ul>
+				<button class="self-start bg-green-500 text-white py-1 px-2 rounded-sm font-normal">Join</button>
+			</div>
+			<!-- End Free Plan -->
+			<!-- Start Basic Plan -->
+			<div class="plan flex flex-col items-stretch p-4 gap-4">
+				<div class="plan-title bg-blue-500 flex flex-col items-center justify-center text-white gap-2 p-7">
+					<span class="text-2xl">Basic</span>
+					<span class="text-4xl relative">7.99</span>
+				</div>
+				<ul class="font-normal">
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Text Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Videos Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Appear On Leaderboard
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Browse Content Without Ads
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Assignments
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Get Daily Prizes
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Earn Certificate
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						1 GB Space For Hosting Files
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-xmark text-red-500"></i>
+						Access Badge System
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+				</ul>
+				<button class="self-start bg-blue-500 text-white py-1 px-2 rounded-sm font-normal">Join</button>
+			</div>
+			<!-- End Basic Plan -->
+			<!-- Start Basic Plan -->
+			<div class="plan flex flex-col items-stretch p-4 gap-4">
+				<div class="plan-title bg-orange-500 flex flex-col items-center justify-center text-white gap-2 p-7">
+					<span class="text-2xl">Premium</span>
+					<span class="text-4xl relative">19.99</span>
+				</div>
+				<ul class="font-normal">
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Text Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Videos Lessons
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="yes py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Appear On Leaderboard
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Browse Content Without Ads
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access All Assignments
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Get Daily Prizes
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Earn Certificate
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						1 GB Space For Hosting Files
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+					<li class="no py-4 relative">
+						<i class="fa-solid fa-check text-green-500"></i>
+						Access Badge System
+						<i class="fa-solid fa-circle-info text-gray-700"></i>
+					</li>
+				</ul>
+				<p class="text-gray-500 text-center">This Is Your Current Plan</p>
+			</div>
+			<!-- End Premium Plan -->
+		</div>
+	</section>
+	<!-- End Wrapper -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

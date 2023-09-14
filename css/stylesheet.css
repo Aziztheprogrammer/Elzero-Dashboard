@@ -1433,3 +1433,49 @@ section.main h1.section-title:hover::before {
 	border-radius: 5px;
 }
 /*End Files Section*/
+
+/*Start Plans Section*/
+.wrapper .plan:nth-child(1) .plan-title {
+	border: 3px white solid;
+	outline: 3px #22C55E solid;
+}
+
+.wrapper .plan:nth-child(2) .plan-title {
+	border: 3px white solid;
+	outline: 3px #3B82F6 solid;
+}
+
+.wrapper .plan:nth-child(3) .plan-title {
+	border: 3px white solid;
+	outline: 3px #F97316 solid;
+}
+
+.wrapper .plan .plan-title span:last-child::after {
+	content: "$";
+	position: absolute;
+	color: white;
+	top: -15px;
+	left: -15px;
+	font-size: 1.5rem;
+}
+
+.wrapper .plan ul li {
+	border-bottom: 1px #eee solid;
+}
+
+.wrapper .plan ul li:last-child {
+	border-bottom: none;
+}
+
+.wrapper .plan ul li i:first-child {
+	margin-right: 5px;
+}
+
+.wrapper .plan ul li i:last-child {
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*End Plans Section*/
